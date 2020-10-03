@@ -1,0 +1,123 @@
+/* General Styling */
+html{
+    background-color: rgb(190, 203, 207);
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.884);
+    font-family: Arial, Helvetica, sans-serif;  
+    line-height: 1.2;
+    margin: 2em;
+    
+}
+
+header {
+    background-color: rgb(190, 203, 207);
+    padding: 5px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0.5em;
+}
+
+h1, h2 {
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif   
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+h3 {
+    
+}
+
+h4 {
+    font-size: 20px;
+    text-align: center;
+    color: black;  
+}
+
+section {
+    margin: 2em;
+}
+
+footer {
+    display: block;
+    background-color: rgb(190, 203, 207);
+    margin: 0;
+    padding: 0.3em;
+    color: white;
+}
+
+
+
+
+/*Recipe Description & Time*/
+
+.description {
+    padding: 0em 1em;
+    text-align: center;
+}
+
+/*Ingredients */
+
+/*Instructions */
+
+/*Nutritional Facts*/
+
+/* Review Section */
+.review-text {
+    color: rgb(134, 134, 134);
+    font-style: italic;
+}
+
+.review-box {
+    display: inline-block;
+    border: 1px solid rgb(148, 148, 148);
+    border-radius: 4px;
+    padding: 0 1em;
+    margin: 0;
+}
+
+.btn { 
+    display: inline-block;
+    background-color: rgb(8, 8, 8);
+    padding: 0.5em 1.5em;
+    margin: 1em 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(97, 97, 97);
+}
+
+
+
+/*Footer/Find Us Styling*/
+
+.find-us {
+    display: grid;
+}
+
+.social {
+    list-style-type: none;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(2 1fr);
+    display: grid;
+    
+
+}
+
+.legal {
+    list-style-type: none;
+    display: inline-block;
+    
+}

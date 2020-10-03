@@ -4,7 +4,7 @@ html{
 }
 
 body {
-    background-color: rgba(255, 255, 255, 0.884);
+    background-color: rgba(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;  
     line-height: 1.2;
     margin: 2em;
@@ -18,12 +18,17 @@ header {
 
 h1 {
     font-size: 30px;
-    text-align: center;
     margin: 0.5em;
+    text-align: center;
+    text-decoration: underline;
 }
 
-h1, h2 {
- font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif   
+h1:hover {
+    color: rgb(78, 77, 77);
+}
+
+h1, h2, h4 {
+ font-family: 'Merriweather', serif;
 }
 
 h2 {
@@ -34,7 +39,7 @@ h2 {
 
 h4 {
     font-size: 20px;
-    text-align: center;
+    margin: 1em; 
     color: black;  
 }
 
@@ -52,21 +57,69 @@ footer {
 
 
 
+/* Navigation Bar */
+
+.menubtn {
+    color:black;
+}
+
+.menubtn:hover {
+    color: white;
+}
+
+.searchbtn {
+    color: black;
+}
+
+.searchbtn:hover {
+    color: white;
+}
+
+
 
 /*Recipe Description & Time*/
 
 .description {
     padding: 0em 1em;
     text-align: center;
+    font-style: italic;
 }
 
 /*Ingredients */
 
+.ingredients { 
+    background-color: rgb(231, 231, 231, 0.1);
+    padding: 1em;
+    display: block;
+
+}
+
 /*Instructions */
+
+.instructions {
+    background-color: rgb(231, 231, 231, 0.1);
+    padding: 1em;
+    display: inline-block;
+}
 
 /*Nutritional Facts*/
 
+.nutrition {
+    background-color: rgb(231, 231, 231, 0.1);
+    padding: 1em;
+    display: inline-block;
+}
+
 /* Review Section */
+
+.grade {
+    color: gainsboro;
+}
+
+.grade:hover {
+    color: black;
+}
+
 .review-text {
     color: rgb(134, 134, 134);
     font-style: italic;
@@ -92,29 +145,39 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    background-color: rgb(97, 97, 97);
+.btn:hover {
+    background-color: rgb(43, 43, 43);
 }
 
 
 
 /*Footer/Find Us Styling*/
 
-.find-us {
-    display: grid;
+.contact {
+    background-color: rgba(179, 179, 179, 0.3);
+    border-radius: 4px;
+    display: block;
+    padding: 0.5em;
+    font-size: 17px;
+    margin: 2em 0em;
+    
 }
 
 .social {
     list-style-type: none;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-rows: repeat(2 1fr);
-    display: grid;
-    
-
+    color: white;
 }
+.social a:hover {
+    color: rgb(14, 14, 14);
+    
+}
+
 
 .legal {
     list-style-type: none;
-    display: inline-block;
-    
 }
+
+.legal a:hover {
+    color:black;
+}
+ 

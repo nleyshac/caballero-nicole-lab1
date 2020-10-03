@@ -2,13 +2,14 @@
 
 <h2>Ingredients</h2>
 
-• 2 medium ripe bananas
-• 1/2 cup smooth peanut butter
-• 2 tbsp coconut oil
-• 1 cup rolled oats
-• 3 tbsp maple syrup
-• 1/2 crushed walnuts
-• 1/2 cup dark chocolate chunks 
+<ul>
+<li>2 medium ripe bananas</li>
+<li>1/2 cup smooth peanut butter</li>
+<li>2 tbsp coconut oil</li>
+<li>1 cup rolled oats</li>
+<li>3 tbsp maple syrup</li>
+<li>1/2 crushed walnuts</li>
+<li>1/2 cup dark chocolate chunks</li>
 
 
 <h2>Instructions</h2>
@@ -38,7 +39,6 @@ Comment:
 
 
 
-/*Content List*/  
 
 Site specific:
 Navigation, logo, social media and contacy links, menu bar, search bar, copyright/legal policies

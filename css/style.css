@@ -8,7 +8,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;  
     line-height: 1.2;
     margin: 2em;
-    
+}
+
+img {
+    width: 550px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
 }
 
 header {
@@ -28,7 +35,8 @@ h1:hover {
 }
 
 h1, h2, h4 {
- font-family: 'Merriweather', serif;
+ font-family: 'Merriweather', Verdana, serif;
+ 
 }
 
 h2 {
@@ -58,7 +66,9 @@ footer {
 
 
 /* Navigation Bar */
-
+.topbar {
+    align-content:
+}
 .menubtn {
     color:black;
 }
@@ -75,6 +85,9 @@ footer {
     color: white;
 }
 
+.search-container {
+    display: inline-block;
+}
 
 
 /*Recipe Description & Time*/
@@ -113,7 +126,7 @@ footer {
 /* Review Section */
 
 .grade {
-    color: gainsboro;
+    color: rgb(187, 184, 184);
 }
 
 .grade:hover {
@@ -128,7 +141,7 @@ footer {
 .review-box {
     display: inline-block;
     border: 1px solid rgb(148, 148, 148);
-    border-radius: 4px;
+    border-radius: 3px;
     padding: 0 1em;
     margin: 0;
 }
@@ -149,35 +162,104 @@ a {
     background-color: rgb(43, 43, 43);
 }
 
+.next-recipe {
+    text-align: right;
+}
+
+.next-recipe:hover {
+    text-decoration: underline;
+}
 
 
 /*Footer/Find Us Styling*/
 
 .contact {
-    background-color: rgba(179, 179, 179, 0.3);
+    background-color: rgb(219, 219, 219, 0.3);
     border-radius: 4px;
     display: block;
     padding: 0.5em;
     font-size: 17px;
+    font-weight: 300;
     margin: 2em 0em;
+    border: 2px solid white;
     
 }
 
 .social {
     list-style-type: none;
-    color: white;
+    
+}
+
+.social a {
+    color: black;
 }
 .social a:hover {
-    color: rgb(14, 14, 14);
+    color: white;
     
 }
 
 
 .legal {
     list-style-type: none;
+    display: flex;
+    position: relative;
+    margin-left: -2em;
+    justify-content: space-between;
+}
+
+.legal a {
+    color: rgb(253, 253, 253);
 }
 
 .legal a:hover {
-    color:black;
+    color:white;
+    text-decoration: underline;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+
+    h2 {
+        text-align: center;
+    }
+
+    .ingredients {
+        display: block;
+    }
+
+    .ingredients li{
+       margin-left: 16em;
+    }
+
+    .instructions {
+      display: block;
+    }
+
+    .instructions li {
+        margin-left: 3em;
+     }
+
+     .nutrition {
+         text-align: center;
+         margin-left: 10em;
+
+     }
 }
  
+
+@media screen and (min-width: 1300px) {
+
+body {  
+    font-size: 18px;
+
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2, h4 {
+    font-size: 25px;
+}
+}

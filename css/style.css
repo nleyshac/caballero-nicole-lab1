@@ -36,7 +36,7 @@ h1 {
 }
 
 h1:hover {
-    color: rgb(78, 77, 77);
+    color:  rgb(190, 203, 207)
 }
 
 h1, h2, h4 {
@@ -83,7 +83,7 @@ footer {
 }
 
 .menubtn:hover {
-    color: white;
+    color:  rgb(190, 203, 207)
 }
 
 .searchbtn {
@@ -91,7 +91,7 @@ footer {
 }
 
 .searchbtn:hover {
-    color: white;
+    color:  rgb(190, 203, 207)
 }
 
 .search-container {
@@ -149,8 +149,6 @@ footer {
     font-size: 16px;
     line-height: 2;
     margin-bottom: 5em;
-
-    
 }
 
 .similar-recipes img{
@@ -269,7 +267,7 @@ a {
 
 /* Media Queries */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1299px) {
 
     h2 {
         text-align: center;
@@ -294,8 +292,15 @@ a {
      .nutrition {
          text-align: center;
          margin-left: 10em;
-
      }
+
+     .browse {
+        display: none;
+    }
+    
+    .similar-recipes {
+        display: none;
+    }
 }
  
 
@@ -326,5 +331,6 @@ h2, h4 {
     grid-column: 1/4;
     grid-row: 2/3;
 }
+
 
 }

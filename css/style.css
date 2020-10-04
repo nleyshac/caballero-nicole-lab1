@@ -1,6 +1,10 @@
 /* General Styling */
+:root {
+    background-color: rgb(190, 203, 207)
+    
+}
 html{
-    background-color: rgb(190, 203, 207);
+    background-image: url("https://images.unsplash.com/photo-1501769214405-5e5ee5125a02?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=398&q=80")
 }
 
 body {
@@ -16,10 +20,11 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1em;
+    margin-top: -2em;
 }
 
 header {
-    background-color: rgb(190, 203, 207);
+    background-color: white;
     padding: 5px;
 }
 
@@ -44,11 +49,16 @@ h2 {
     font-weight: 300;
 }
 
+h3 {
+    font-style: italic;
+}
 
 h4 {
     font-size: 20px;
-    margin: 1em; 
-    color: black;  
+    margin-left: 1.5em; 
+    margin-bottom: 1em;
+    color: rgb(255, 255, 255);  
+    
 }
 
 section {
@@ -66,9 +76,8 @@ footer {
 
 
 /* Navigation Bar */
-.topbar {
-    align-content:
-}
+
+
 .menubtn {
     color:black;
 }
@@ -121,7 +130,50 @@ footer {
     background-color: rgb(231, 231, 231, 0.1);
     padding: 1em;
     display: inline-block;
+    height: 150px;
 }
+
+
+/* Similar Recipes */
+
+.browse {
+    text-align: center;
+    margin-top: -5em;
+}
+
+.similar-recipes {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 5em;
+
+    
+}
+
+.similar-recipes img{
+    width: 250px;
+    height: 250px;
+    margin-top: 0.1em;
+    opacity: 1;
+}
+
+.similar-recipes img:hover {
+    opacity: 0.7;
+    transition: .5s ease;
+}
+
+.similar-recipes a {
+    color: rgb(19, 18, 18);
+}
+
+.similar-recipes a:hover {
+    text-decoration: underline;
+}
+
+
 
 /* Review Section */
 
@@ -180,7 +232,7 @@ a {
     padding: 0.5em;
     font-size: 17px;
     font-weight: 300;
-    margin: 2em 0em;
+    margin: 2em 3em;
     border: 2px solid white;
     
 }
@@ -194,8 +246,7 @@ a {
     color: black;
 }
 .social a:hover {
-    color: white;
-    
+    color: white; 
 }
 
 
@@ -204,7 +255,7 @@ a {
     display: flex;
     position: relative;
     margin-left: -2em;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .legal a {
@@ -256,10 +307,24 @@ body {
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 30px;
 }
 
 h2, h4 {
     font-size: 25px;
 }
+
+.grid-wrapper {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+
+.n {
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
 }
